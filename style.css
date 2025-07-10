@@ -42,7 +42,7 @@ body {
 /* Responsif di HP */
 @media (max-width: 768px) {
   .navbar ul {
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
@@ -55,6 +55,11 @@ body {
   .navbar a {
     padding: 10px 20px;
     font-size: 18px;
+  }
+
+  .gambar {
+    max-width: 35%;
+    height: auto;
   }
 }
 
