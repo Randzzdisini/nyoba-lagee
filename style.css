@@ -46,6 +46,7 @@ body {
     flex-wrap: wrap;
     align-items: center;
     padding: 10px;
+    gap: 15px;
   }
 
   .header {
@@ -53,12 +54,12 @@ body {
   }
 
   .navbar a {
-    padding: 10px 20px;
-    font-size: 18px;
+    padding: 20px 40px;
+    font-size: 20px;
   }
 
   .gambar {
-    max-width: 35%;
+    max-width: 25%;
     height: auto;
   }
 }
