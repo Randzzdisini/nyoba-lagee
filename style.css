@@ -10,6 +10,9 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
+  background-image: url(pexels-eberhardgross-2310713.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* HEADER */
