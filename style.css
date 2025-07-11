@@ -71,6 +71,11 @@ body {
   background-color: rgb(220, 247, 255);
 }
 
+.navbar a:focus {
+  outline: 2px dashed #79a1f9;
+  outline-offset: 4px;
+}
+
 /* RESPONSIF: HP KECIL */
 @media (max-width: 480px) {
   .navbar a {
