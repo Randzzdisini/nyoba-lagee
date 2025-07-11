@@ -54,11 +54,21 @@ body {
   border: 3px solid #79a1f9;
   border-radius: 50px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: all 0.2 ease;
 }
 
 .navbar a:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: 2a9b9f;
+  background-color: rgb(220, 247, 255);
+}
+
+.navbar a:active {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  color: 2a9b9f;
+  background-color: rgb(220, 247, 255);
 }
 
 /* RESPONSIF: HP KECIL */
