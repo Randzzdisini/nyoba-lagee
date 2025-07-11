@@ -55,6 +55,7 @@ body {
   border-radius: 50px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   transition: all 0.2 ease;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .navbar a:hover {
