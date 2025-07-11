@@ -7,7 +7,13 @@
 body {
   font-family: sans-serif;
   line-height: 1.6;
-  background-image: url(pexels-eberhardgross-2310713.jpg);
+  background-image: url('pexels-eberhardgross-2310713.jpg');
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header {
@@ -15,62 +21,53 @@ body {
   padding: 30px;
 }
 
-.navbar ul {
+.header img {
+  max-width: 90%;
+  height: auto;
+}
+
+.navbar {
+  width: 100%;
   display: flex;
   justify-content: center;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 20px;
   list-style: none;
-  padding: 10px;
+  padding: 20px;
 }
 
 .navbar a {
-    color: #2a9b9f;
-    background-color: rgb(235, 251, 255);
-    padding: 20px 40px;
-    border: 3px solid #79a1f9;
-    border-radius: 999px;
-    font-size: 25px;
-    text-decoration: none;
-    transition: color 0.5s;
+  color: #2a9b9f;
+  background-color: rgb(235, 251, 255);
+  padding: 12px 30px;
+  border: 3px solid #79a1f9;
+  border-radius: 999px;
+  font-size: 20px;
+  text-decoration: none;
+  text-align: center;
+  width: 200px;
+  transition: all 0.3s ease;
 }
 
 .navbar a:hover {
-    color: #2a67c8;
-    background-color: rgb(220, 247, 255);
+  color: #2a67c8;
+  background-color: rgb(220, 247, 255);
 }
 
-/* Responsif di HP */
+/* Responsif */
 @media (max-width: 768px) {
-  .navbar ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    padding: 10px;
-    gap: 20px;
-  }
-
   .header {
-    padding: 10px;
+    padding: 20px;
   }
 
   .navbar a {
-    padding: 15px 25px;
     font-size: 18px;
-    margin-bottom: 15px;
+    padding: 10px 20px;
+    width: 180px;
   }
-
-  .navbar a:not(:last-child) {
-    margin-bottom: 15px;
-  }
-
-  .gambar {
-    max-width: 25%;
-    height: auto;
-  }
-}
-
-.gambar {
-    max-width: 50%;
-    height: auto;
 }
