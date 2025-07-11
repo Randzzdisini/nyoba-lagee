@@ -1,81 +1,93 @@
-* {
+/* RESET & DASAR */
+body {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: sans-serif;
-  line-height: 1.6;
-  background-image: url('pexels-eberhardgross-2310713.jpg');
+  background-color: #dde9f7;
   background-size: cover;
   background-position: center;
-  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
+  min-height: 100vh;
 }
 
-.header {
-  text-align: center;
-  padding: 30px;
-}
-
+/* HEADER */
 .header img {
   max-width: 90%;
   height: auto;
+  margin-top: 30px;
 }
 
-.navbar {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-}
-
+/* NAVBAR */
 .navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 40px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
-  list-style: none;
-  padding: 20px;
-  margin-top: 20px;
 }
 
 .navbar li {
-  margin-bottom: 20px;
-}
-
-.navbar li:last-child {
-  margin-bottom: 0;
+  margin: 12px 0;
 }
 
 .navbar a {
-  color: #2a9b9f;
-  background-color: rgb(235, 251, 255);
-  padding: 12px 30px;
-  border: 3px solid #79a1f9;
-  border-radius: 999px;
-  font-size: 20px;
-  text-decoration: none;
+  display: inline-block;
+  width: 180px;
+  padding: 12px 0;
+  font-size: 18px;
   text-align: center;
-  width: 200px;
-  transition: all 0.3s ease;
+  text-decoration: none;
+  color: #2a9b9f;
+  background-color: #ebfbff;
+  border: 3px solid #79a1f9;
+  border-radius: 50px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .navbar a:hover {
-  color: #2a67c8;
-  background-color: rgb(220, 247, 255);
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-/* Responsif */
-@media (max-width: 768px) {
-  .header {
-    padding: 20px;
+/* RESPONSIF: HP KECIL */
+@media (max-width: 480px) {
+  .navbar a {
+    width: 140px;
+    padding: 10px 0;
+    font-size: 16px;
+  }
+
+  .header img {
+    max-width: 95%;
+    margin-top: 20px;
+  }
+}
+
+/* RESPONSIF: TABLET */
+@media (min-width: 481px) and (max-width: 768px) {
+  .navbar a {
+    width: 160px;
+    font-size: 17px;
+  }
+}
+
+/* RESPONSIF: DESKTOP */
+@media (min-width: 769px) {
+  .navbar ul {
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .navbar li {
+    margin: 0;
   }
 
   .navbar a {
-    font-size: 18px;
-    padding: 10px 20px;
-    width: 180px;
+    width: 160px;
+    font-size: 17px;
   }
 }
